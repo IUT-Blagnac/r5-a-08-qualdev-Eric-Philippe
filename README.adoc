@@ -25,18 +25,28 @@ Egenskap: Är det redan fredag?
       | söndag         | Nej    |
       | anything else! | Nej    |
 ---
-[TP1](./res/tp1.png)
+image::res/tp1.png[width=80%]
+
 
 
 .Exemple de code
 [source,java]
 ---
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+Feature: Cocktail Ordering
+
+  As Romeo, I want to offer a drink to Juliette so that we can discuss together (and maybe more).
+
+    Scenario Outline: Creating an empty order
+      Given "<owner>" who wants to buy a drink
+      When an order is declared for "<target>"
+      Then there is <nbCocktails> cocktails in the order
+
+      Examples:
+        | owner | target   | nbCocktails |
+        | Romeo | Juliette |           0 |
+        | Tom   | Jerry    |           0 |
 ---
+image::res/tp2.png[width=80%]
 
 .Exemple d'image insérée en asciidoc
 image::artifacts-r303.svg[width=80%]
