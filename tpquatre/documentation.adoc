@@ -1,0 +1,97 @@
+:toc: right
+:backend: html5
+:doctitle: Living Documentation
+:doctype: book
+:icons: font
+:!numbered:
+:sectanchors:
+:sectlink:
+:docinfo:
+:source-highlighter: highlightjs
+:toclevels: 3
+:hardbreaks:
+:chapter-label: Chapter
+:version-label: Version
+
+= *Living Documentation*
+
+== *Summary*
+[cols="12*^m", options="header,footer"]
+|===
+3+|Scenarios 7+|Steps 2+|Features: 1
+
+|[green]#*Passed*#
+|[red]#*Failed*#
+|Total
+|[green]#*Passed*#
+|[red]#*Failed*#
+|[purple]#*Skipped*#
+|[maroon]#*Pending*#
+|[yellow]#*Undefined*#
+|[blue]#*Missing*#
+|Total
+|Duration
+|Status
+
+12+^|*<<Är-det-redan-fredag?>>*
+|3
+|0
+|3
+|9
+|0
+|0
+|0
+|0
+|0
+|9
+|002ms
+|[green]#*passed*#
+12+^|*Totals*
+|3|0|3|9|0|0|0|0|0|9 2+|002ms
+|===
+
+== *Features*
+
+[[Är-det-redan-fredag?, Är det redan fredag?]]
+=== *Är det redan fredag?*
+
+ifndef::backend-pdf[]
+minmax::Är-det-redan-fredag?[]
+endif::[]
+****
+Alla vill veta när det är fredag
+****
+
+==== Scenario: Söndag är inte fredag
+
+==========
+Givet ::
+att idag är söndag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+När ::
+jag frågar om det redan är fredag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Så ::
+bör jag få svaret "Nej" icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+==========
+
+==== Scenario: Söndag är inte fredag
+
+==========
+Givet ::
+att idag är söndag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+När ::
+jag frågar om det redan är fredag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Så ::
+bör jag få svaret "Nej" icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+==========
+
+==== Scenario: Söndag är inte fredag
+
+==========
+Givet ::
+att idag är söndag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+När ::
+jag frågar om det redan är fredag icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Så ::
+bör jag få svaret "Nej" icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+==========
+
